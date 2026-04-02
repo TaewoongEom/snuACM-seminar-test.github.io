@@ -19,10 +19,10 @@ The SNU Applied and Computational Mathematics seminar brings together researcher
 {% assign talk_date = talk.date | date: '%s' %}
 {% if talk_date >= today %}
 <div class="notice--info">
-  <p><a href="{{ talk.url }}">{{ talk.title }}</a></p>
-  <p>Date: {{ talk.date | date: "%B %-d, %Y" }} <br>
-  Location:</strong> {{ talk.venue | default: "TBA" }}</p>
-  <p>{{ talk.excerpt | strip_html | truncatewords: 30 }}</p>
+<p><a href="{{ talk.url }}">{{ talk.title }}</a></p>
+<p>Date : {{ talk.date | date: "%B %-d, %Y" }} <br>
+Location : {{ talk.venue | default: "TBA" }}</p>
+<p>{{ talk.excerpt | strip_html | truncatewords: 30 }}</p>
 </div>
 {% assign has_upcoming = true %}
 {% break %}
